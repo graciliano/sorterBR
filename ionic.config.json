@@ -1,0 +1,7 @@
+{
+  "name": "sorter",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

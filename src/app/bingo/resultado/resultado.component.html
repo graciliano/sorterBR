@@ -1,0 +1,153 @@
+<ion-content text-center>
+   <BR>
+   <ion-grid>
+      <ion-row class="ion-justify-content-start">
+         <ion-col size="1"></ion-col>
+         <ion-col class="bingo numeroEsc" size="2"><h2>B</h2></ion-col>
+         <ion-col class="bingo numeroEsc" size="2"><h2>I</h2></ion-col>
+         <ion-col class="bingo numeroEsc" size="2"><h2>N</h2></ion-col>
+         <ion-col class="bingo numeroEsc" size="2"><h2>G</h2></ion-col>
+         <ion-col class="bingo numeroEsc" size="2"><h2>O</h2></ion-col>
+         <ion-col size="1"></ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-start ">
+         <ion-col size="1"></ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(0)" size="2">01</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(15)" size="2">16</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(30)" size="2">31</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(45)" size="2">46</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(60)" size="2">61</ion-col>
+         <ion-col size="1"></ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-start ">
+         <ion-col size="1"></ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(1)" size="2">02</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(16)" size="2">17</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(31)" size="2">32</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(46)" size="2">47</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(61)" size="2">62</ion-col>
+         <ion-col size="1"></ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-start ">
+         <ion-col size="1"></ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(2)" size="2">03</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(17)" size="2">18</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(32)" size="2">33</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(47)" size="2">48</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(62)" size="2">63</ion-col>
+         <ion-col size="1"></ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-start ">
+         <ion-col size="1"></ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(3)" size="2">04</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(18)" size="2">19</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(33)" size="2">34</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(48)" size="2">49</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(63)" size="2">64</ion-col>
+         <ion-col size="1"></ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-start ">
+         <ion-col size="1"></ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(4)" size="2">05</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(19)" size="2">20</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(34)" size="2">35</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(49)" size="2">50</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(64)" size="2">65</ion-col>
+         <ion-col size="1"></ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-start ">
+         <ion-col size="1"></ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(5)" size="2">06</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(20)" size="2">21</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(35)" size="2">36</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(50)" size="2">51</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(65)" size="2">66</ion-col>
+         <ion-col size="1"></ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-start ">
+         <ion-col size="1"></ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(6)" size="2">07</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(21)" size="2">22</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(36)" size="2">37</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(51)" size="2">52</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(66)" size="2">67</ion-col>
+         <ion-col size="1"></ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-start ">
+         <ion-col size="1"></ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(7)" size="2">08</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(22)" size="2">23</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(37)" size="2">38</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(52)" size="2">53</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(67)" size="2">68</ion-col>
+         <ion-col size="1"></ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-start ">
+         <ion-col size="1"></ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(8)" size="2">09</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(23)" size="2">24</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(38)" size="2">39</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(53)" size="2">54</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(68)" size="2">69</ion-col>
+         <ion-col size="1"></ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-start ">
+         <ion-col size="1"></ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(9)" size="2">10</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(24)" size="2">25</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(39)" size="2">40</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(54)" size="2">55</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(69)" size="2">70</ion-col>
+         <ion-col size="1"></ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-start ">
+         <ion-col size="1"></ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(10)" size="2">11</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(25)" size="2">26</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(40)" size="2">41</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(55)" size="2">56</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(70)" size="2">71</ion-col>
+         <ion-col size="1"></ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-start ">
+         <ion-col size="1"></ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(11)" size="2">12</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(26)" size="2">27</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(41)" size="2">42</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(56)" size="2">57</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(71)" size="2">72</ion-col>
+         <ion-col size="1"></ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-start ">
+         <ion-col size="1"></ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(12)" size="2">13</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(27)" size="2">28</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(42)" size="2">43</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(57)" size="2">58</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(72)" size="2">73</ion-col>
+         <ion-col size="1"></ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-start">
+         <ion-col size="1"></ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(13)" size="2">14</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(28)" size="2">29</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(43)" size="2">44</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(58)" size="2">59</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(73)" size="2">74</ion-col>
+         <ion-col size="1"></ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-start ">
+         <ion-col size="1"></ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(14)" size="2">15</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(29)" size="2">30</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(44)" size="2">45</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(59)" size="2">60</ion-col>
+         <ion-col class="numero" [class.numeroEsc]="!verificaResult(74)" size="2">75</ion-col>
+         <ion-col size="1"></ion-col>
+      </ion-row>
+      <!-- <br>
+      <ion-button class="button" color="custom" size="small" (click)="voltar()">VOLTAR</ion-button> -->
+
+   </ion-grid>
+
+</ion-content>

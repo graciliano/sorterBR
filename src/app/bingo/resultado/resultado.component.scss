@@ -1,0 +1,26 @@
+.bingo {
+   border-style: solid;
+   border-width: 1px;
+   border-color: white;
+}
+
+.numero {
+   border-style: solid;
+   border-width: 1px;
+   border-color: white;
+   padding: 10px;
+   font-size: larger;
+}
+
+.numeroEsc {
+   border-style: solid;
+   border-width: 1px;
+   border-color: white;
+   padding: 10px;
+   font-size: larger;
+   background-color: #f57c00;
+}
+
+ion-row {
+   grid-row-gap: 0;
+}

@@ -1,0 +1,49 @@
+<ion-app>
+   <ion-content text-center>
+      <p class="title">SORTER</p>
+      <h3>Quantas letras sortear?</h3>
+      <ion-grid>
+         <ion-row class="ion-justify-content-start">
+            <ion-col size="2"></ion-col>
+            <ion-col size="8">
+               <ion-input class="input" inputmode="numeric" autofocus type="number"
+                  [formControl]="inputNumero"></ion-input>
+            </ion-col>
+            <ion-col size="2"></ion-col>
+         </ion-row>
+      </ion-grid>
+
+      <ion-grid>
+         <ion-row class="ion-justify-content-start">
+            <ion-col size="1"></ion-col>
+            <ion-col size="9">
+               <ion-list>
+                  <form [formGroup]="checkRepetir">
+                     <ion-item>
+                        <ion-label>Repetir letra</ion-label>
+                        <ion-checkbox color="light" formControlName="value" checked="false"></ion-checkbox>
+                     </ion-item>
+                  </form>
+               </ion-list>
+            </ion-col>
+            <ion-col size="2"></ion-col>
+         </ion-row>
+         <ion-row class="ion-justify-content-start">
+            <ion-col size="2"></ion-col>
+            <ion-col padding size="8">
+               <ion-button class="sorter-button" expand="block" color="custom" size="large" (click)="resultado()">SORTER
+               </ion-button>
+            </ion-col>
+            <ion-col size="2"></ion-col>
+         </ion-row>
+         <ion-row class="ion-justify-content-start">
+            <ion-col size="2"></ion-col>
+            <ion-col padding size="8">
+               <!-- <ion-button class="button" color="custom" size="small" (click)="voltar()">VOLTAR</ion-button> -->
+            </ion-col>
+            <ion-col size="2"></ion-col>
+         </ion-row>
+
+      </ion-grid>
+   </ion-content>
+</ion-app>
